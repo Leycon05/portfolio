@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Leycon Lima - Desenvolvedor Front-End & Mobile</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+<h3 class="logo">Leycon Lima</h3>
+
+<nav class="nav-links">
+<a href="#home">Início</a>
+<a href="#about">Sobre</a>
+<a href="#skills">Habilidades</a>
+<a href="#projects">Projetos</a>
+<a href="#contact">Contato</a>
+</nav>
+
+<div class="hamburger" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<nav class="mobile-menu" id="mobileMenu">
+<a href="#home" onclick="toggleMenu()">Início</a>
+<a href="#about" onclick="toggleMenu()">Sobre</a>
+<a href="#skills" onclick="toggleMenu()">Habilidades</a>
+<a href="#projects" onclick="toggleMenu()">Projetos</a>
+<a href="#contact" onclick="toggleMenu()">Contato</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<div class="hero-content reveal">
+
+<img src="img/IMG-20251220-WA0197.jpg"
+class="profile-img"
+alt="Foto de Leycon Lima">
+
+<h1 class="typing"></h1>
+
+<p class="subtitle">
+Desenvolvedor Front-End e Mobile especializado em React e React Native
+</p>
+
+<div class="links">
+
+<a href="https://github.com/Leycon05" class="btn">
+<i class="fa-brands fa-github"></i> GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/leycon-lima-91b0192b8/" class="btn-outline">
+<i class="fa-brands fa-linkedin"></i> LinkedIn
+</a>
+
+<a href="cv-leycon-lima.pdf" class="btn" download>
+<i class="fa-solid fa-file-arrow-down"></i> Baixar CV
+</a>
+
+</div>
+
+</div>
+</section>
+
+<!-- SOBRE -->
+<section id="about" class="card reveal">
+
+<h2>Sobre Mim</h2>
+
+<p>
+Desenvolvedor front-end focado na criação de interfaces modernas e eficientes.
+Experiência com <b>React, JavaScript, HTML, CSS e React Native</b>.
+Atuei também no back-end com APIs e e-commerce em Java, banco de dados MySQL e mobile com Expo.
+</p>
+
+</section>
+
+<!-- FORMAÇÃO -->
+<section id="education" class="card reveal">
+
+<h2>Formação</h2>
+
+<p><b>✔ Técnico em Desenvolvimento de Sistemas - SENAI</b></p>
+<p><b>✔ Bacharelado em Ciência da Computação em andamento - UNIP</b></p>
+
+</section>
+
+<!-- HABILIDADES -->
+<section id="skills" class="card reveal">
+
+<h2>Habilidades</h2>
+
+<ul class="skills-list">
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>React Native</li>
+<li>Git & GitHub</li>
+<li>Java</li>
+<li>MySQL</li>
+</ul>
+
+</section>
+
+<!-- PROJETOS -->
+<section id="projects" class="card reveal">
+
+<h2>Projetos</h2>
+
+<div class="projects-container">
+
+<div class="project-card">
+
+<img src="img/projeto-times.png"
+class="project-img"
+alt="Projeto sistema de times">
+
+<h3>Sistema de Times</h3>
+
+<p>
+Sistema para gerenciamento de times, jogos e estatísticas.
+</p>
+
+<span class="tech">
+React • Java • MySQL
+</span>
+
+<div class="project-buttons">
+<a href="https://github.com/TCC-Senai3/front-end-mobile.git"
+class="btn-mini">
+Ver no GitHub
+</a>
+</div>
+
+</div>
+
+
+<div class="project-card">
+
+<img src="img/projeto-react-times.png"
+class="project-img"
+alt="Projeto gerenciamento de times">
+
+<h3>Sistema de Gerenciamento de Times</h3>
+
+<p>
+Aplicação web em React para cadastro e organização de times e jogadores.
+Interface moderna e responsiva.
+</p>
+
+<span class="tech">
+React • JavaScript • CSS
+</span>
+
+<div class="project-buttons">
+<a href="https://github.com/times-react/time-react"
+class="btn-mini">
+Ver no GitHub
+</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTATO -->
+<section id="contact" class="card reveal">
+
+<h2>Contato</h2>
+
+<div class="contact-container">
+
+<a href="mailto:limaleycon@gmail.com" class="contact-box">
+<i class="fa-solid fa-envelope"></i>
+<p>Email</p>
+</a>
+
+<a href="https://wa.me/11960163706" class="contact-box">
+<i class="fa-brands fa-whatsapp"></i>
+<p>WhatsApp</p>
+</a>
+
+<a href="https://www.instagram.com/its_leycon.05" class="contact-box">
+<i class="fa-brands fa-instagram"></i>
+<p>Instagram</p>
+</a>
+
+<a href="https://www.linkedin.com/in/leycon-lima-91b0192b8/" class="contact-box">
+<i class="fa-brands fa-linkedin"></i>
+<p>LinkedIn</p>
+</a>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 - Desenvolvido por Leycon Lima</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
