@@ -226,6 +226,7 @@ padding:20px;
 border-radius:15px;
 transition:.3s;
 box-shadow:inset 4px 4px 10px #babdc2,inset -4px -4px 10px #ffffff;
+text-align: center;
 }
 
 .project-card:hover{
@@ -238,12 +239,55 @@ border-radius:10px;
 margin-bottom:10px;
 }
 
-.tech{
-display:block;
-margin-top:10px;
+.tech-title{
 font-size:14px;
-opacity:.7;
+font-weight:600;
+margin-top:10px;
+margin-bottom:5px;
+text-align:center;
+color:#555;
 }
+
+.tech{
+display:flex;
+justify-content:center; /* centraliza */
+align-items:center;
+gap:15px;
+margin-top:5px;
+flex-wrap:wrap;
+}
+
+.tech span{
+display:flex;
+align-items:center;
+gap:6px;
+font-size:14px;
+background:#f1f1f1;
+padding:6px 12px;
+border-radius:6px;
+}
+
+.tech span:hover{
+transform:scale(1.05);
+transition:0.2s;
+}
+
+/* cores das tecnologias */
+
+.fa-react{
+color:#61DBFB;
+}
+
+.fa-js{
+color:#F7DF1E;
+}
+
+.fa-css3-alt{
+color:#264de4;
+}
+
+
+
 
 .btn-mini{
 margin-top:15px;
@@ -427,6 +471,9 @@ text-align:center;
 
 .card{
 max-width:1000px;
+}
+html{
+scroll-behavior: smooth;
 }
 
 }
