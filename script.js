@@ -1,11 +1,8 @@
 // ===== MENU MOBILE =====
 
 function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    const icon = document.querySelector(".hamburger");
-
-    menu.classList.toggle("open");
-    icon.classList.toggle("active");
+const menu = document.getElementById("mobileMenu");
+menu.classList.toggle("open");
 }
 
 // ===== SCROLL REVEAL =====

@@ -14,6 +14,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <body>
 
+    <div id="site-content">
+
 <!-- HEADER -->
 <header class="header">
 
@@ -33,12 +35,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <span></span>
 </div>
 
+
 <nav class="mobile-menu" id="mobileMenu">
+
+<div class="close-menu" onclick="toggleMenu()">
+<i class="fa-solid fa-xmark"></i>
+</div>
+
 <a href="#home" onclick="toggleMenu()">Início</a>
 <a href="#about" onclick="toggleMenu()">Sobre</a>
 <a href="#skills" onclick="toggleMenu()">Habilidades</a>
 <a href="#projects" onclick="toggleMenu()">Projetos</a>
 <a href="#contact" onclick="toggleMenu()">Contato</a>
+
 </nav>
 
 </header>
@@ -104,22 +113,54 @@ Atuei também no back-end com APIs e e-commerce em Java, banco de dados MySQL e 
 </section>
 
 <!-- HABILIDADES -->
-<section id="skills" class="card reveal">
-
-<h2>Habilidades</h2>
-
 <ul class="skills-list">
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>React</li>
-<li>React Native</li>
-<li>Git & GitHub</li>
-<li>Java</li>
-<li>MySQL</li>
-</ul>
 
-</section>
+<li>
+<i class="fa-brands fa-html5"></i>
+HTML
+</li>
+
+<li>
+<i class="fa-brands fa-css3-alt"></i>
+CSS
+</li>
+
+<li>
+<i class="fa-brands fa-js"></i>
+JavaScript
+</li>
+
+<li>
+<i class="fa-brands fa-react"></i>
+React
+</li>
+
+<li>
+<i class="fa-brands fa-react"></i>
+React Native
+</li>
+
+<li>
+<i class="fa-brands fa-git-alt"></i>
+Git
+</li>
+
+<li>
+<i class="fa-brands fa-github"></i>
+GitHub
+</li>
+
+<li>
+<i class="fa-brands fa-java"></i>
+Java
+</li>
+
+<li>
+<i class="fa-solid fa-database"></i>
+MySQL
+</li>
+
+</ul>
 
 
 <!-- PROJETOS -->
@@ -188,7 +229,6 @@ edição, listagem e exclusão de times.
 <div class="tech">
 
 
-<div class="tech">
 
 <span>
 <i class="fa-brands fa-react"></i> React
@@ -201,9 +241,6 @@ edição, listagem e exclusão de times.
 <span>
 <i class="fa-brands fa-css3-alt"></i> CSS
 </span>
-
-</div>
-
 
 </div>
 
@@ -233,7 +270,7 @@ Ver no GitHub
 <p>Email</p>
 </a>
 
-<a href="https://wa.me/11960163706" class="contact-box" target="_blank">
+<a href="https://wa.me/5511960163706" class="contact-box" target="_blank" rel="noopener noreferrer">
 <i class="fa-brands fa-whatsapp"></i>
 <p>WhatsApp</p>
 </a>
@@ -255,8 +292,9 @@ Ver no GitHub
 <footer>
 <p>© 2026 - Desenvolvido por Leycon Lima</p>
 </footer>
-
+</div>
 <script src="script.js"></script>
 
 </body>
 </html>
+

@@ -92,25 +92,39 @@ color:#6b7280;
     }
 
     /* menu que abre */
-    .mobile-menu.open{
-        display:flex;
-        flex-direction:column;
-        position:absolute;
-        top:70px;
-        right:0;
-        width:100%;
-        background:#111;
-        padding:20px 0;
-        text-align:center;
-    }
+  .mobile-menu{
+position: fixed;
+top: 0;
+right: -220px; 
+width: 220px;
+height: 100vh;
 
-    .mobile-menu a{
-        color:white;
-        text-decoration:none;
-        padding:12px 0;
-        font-size:18px;
-    }
+background: #000;
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+padding: 80px 25px;
+gap: 20px;
+
+transition: right 0.3s ease;
+z-index: 1000;
 }
+
+.mobile-menu.open{
+right: 0;
+}
+.close-menu{
+position:absolute;
+top:20px;
+right:20px;
+font-size:28px;
+color:white;
+cursor:pointer;
+}
+}
+
 
 /* ===== HERO ===== */
 
@@ -200,17 +214,51 @@ text-align:center;
 
 /* ===== HABILIDADES ===== */
 
-.skills-list{
-list-style:none;
-margin-top:10px;
-}
-
 .skills-list li{
 font-size:20px;
-margin:10px 0;
+margin:12px 0;
 font-weight:bold;
+
+display:flex;
+align-items:center;
+gap:10px;
+justify-content:center;
 }
 
+.skills-list i{
+font-size:22px;
+}
+.fa-html5{
+color:#E34F26;
+}
+
+.fa-css3-alt{
+color:#264de4;
+}
+
+.fa-js{
+color:#F7DF1E;
+}
+
+.fa-react{
+color:#61DBFB;
+}
+
+.fa-git-alt{
+color:#F1502F;
+}
+
+.fa-github{
+color:#000;
+}
+
+.fa-java{
+color:#EA2D2E;
+}
+
+.fa-database{
+color:#00758F;
+}
 /* ===== PROJETOS ===== */
 
 .projects-container{
@@ -287,7 +335,11 @@ color:#264de4;
 }
 
 
-
+.project-buttons{
+display:flex;
+justify-content:center;
+margin-top:15px;
+}
 
 .btn-mini{
 margin-top:15px;
@@ -299,6 +351,7 @@ font-size:14px;
 border-radius:6px;
 text-decoration:none;
 }
+
 
 /* ===== CONTATO ===== */
 
@@ -395,27 +448,37 @@ border-radius:5px;
 }
 
 .mobile-menu{
-display:none;
-position:absolute;
-top:68px;
-right:0;
-width:100%;
-background:#111;
-flex-direction:column;
-text-align:center;
-padding:20px 0;
-border-bottom:3px solid #6b7280;
+position: fixed;
+top: 0;
+right: -220px; /* começa escondido */
+width: 220px;
+height: 100vh;
+
+background: #000;
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+padding: 80px 25px;
+gap: 20px;
+
+transition: right 0.3s ease;
+
+z-index: 1000;
 }
 
+/* quando abrir */
+
 .mobile-menu.open{
-display:flex;
+right: 0;
 }
 
 .mobile-menu a{
-color:white;
-text-decoration:none;
-padding:12px 0;
-font-size:18px;
+font-size: 18px;
+text-decoration: none;
+color: white;
+width: 100%;
 }
 
 .profile-img{
@@ -475,5 +538,11 @@ max-width:1000px;
 html{
 scroll-behavior: smooth;
 }
+#site-content{
+transition: transform 0.3s ease;
+}
 
+#site-content.shift{
+transform: translateX(-220px);
+}
 }
